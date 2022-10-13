@@ -29,6 +29,10 @@ img {
     max-width: 100%;
 }
 
+link {
+    display: block;
+}
+
 /*hidden section title */
 .visually-hidden {
     position: absolute;
