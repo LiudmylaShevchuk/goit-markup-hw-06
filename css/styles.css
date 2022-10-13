@@ -5,6 +5,7 @@
     --primery-white-color: #ffffff;  
     --primary-background-color: #2f303a;
     --secondary-background-color: #F5F4FA;
+    --project-cards-set-gap: 30px;
 }
 
 body {
@@ -25,6 +26,7 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 /*hidden section title */
@@ -125,11 +127,7 @@ margin-right: 50px;
     color: #000000;
 }
 
-.logo-studio-footer {
-    color: var(--primery-white-color);
-}
-
-/*navigation*/
+/*header-navigation*/
 .link-nav {
     color: var(--primery-text-color);
     text-decoration: none;
@@ -165,13 +163,9 @@ margin-right: 50px;
     color: var(--accent-color);
 }
 
-
-
-
-
-
 /*studio*/
 /*hero*/
+
 .hero-section {
     background: var(--primary-background-color);
 margin: 0 auto;
@@ -198,6 +192,7 @@ padding: 200px 425px;
         width: 696px;
         margin: auto;
  }
+
 .main-button {
     display: block;
     font-family: inherit;
@@ -218,13 +213,6 @@ min-height: 50px;
 }
 
 /*features, example projects, team*/
-.features {
-
-} 
-
-.features-container {
-
-}
 
 .feature-boxs-list {
     display: flex;
@@ -260,15 +248,13 @@ margin-top: 10px;
     align-items: center;
 }
 
-
 .team-cards {
     background-color: var(--secondary-background-color);
 }
 
-
 .team-cards-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .team-card {
@@ -281,7 +267,6 @@ margin-top: 10px;
 .team-card:not(:last-child) {
     margin-right: 30px;
 }
-
 
 .team-card-title {
 font-weight: 500;
@@ -302,100 +287,97 @@ color: var(--secondary-text-color);
     padding: 30px 0;
 }
 
-.filters-list {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    margin-bottom: 34px;
-}
 
 /*portfolio-filters*/
+
 .projects-galery-section {
     padding: 94px 215px;
     background: var(--primery-white-color);
 }
-.button {
+
+.container-filter-buttons {
+    display: flex;
+    min-height: 54px;
+justify-content: center;
+gap: 8px;
+    margin-bottom: 34px;
+}
+
+.filter-button {
+    display: block;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    text-align: center;
     color: var(--primery-text-color);
     background: var(--secondary-background-color);
+    border: none;
     border-radius: 4px;
-    border: 0;
+    padding: 6px 22px;
     cursor: pointer;
-    display: flex;
     }
-.button:hover,
-.button:focus {
+    
+.filter-button:hover,
+.filter-button:focus {
         color: var(--primery-white-color);
         background: var(--accent-color);
     }
 
     
 /*portfolio-cards*/
-.project-cards-list {
-    min-width: 1170px;
+
+.project-cards-set {
     display: flex;
     justify-content: space-between;
     align-items: center;
         flex-wrap: wrap;
-        row-gap: 30px;
-        column-gap: 30px;
-        align-self: stretch;
-
-        order: 0;
-        padding: 0;
-        margin: 0;
+        margin-left: calc( -1 * var(--project-cards-set-gap));
+        margin-top: calc(-1 * var(--project-cards-set-gap));
 }
 
+.project-cards-set > .project-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: var(--project-cards-set-gap);
+    margin-top: var(--project-cards-set-gap);
 
-.project-card {
-    display: flex;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: calc((100% - 60px) / 3);
     border: none;
+    flex-shrink: 0;
 }
 
-.card-img {
-    display: flex;
-    flex-shrink: 1;
-}
-
-
-.project-card-footer {
-display: flex;
-flex-shrink: 1;
-flex-direction: column;
-border: 1px solid #EEEEEE;
-border-top: none;
-padding: 20px 24px;
+.project-card-content {
+    max-width: 322px;
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .card-title {
-display: flex;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--primery-text-color);
-margin-bottom: 4px;
 }
+
 .card-description {
-display: flex;
-    font-size: 16px;
+font-size: 16px;
 line-height: 1.88;
 color:var(--secondary-text-color);
-margin: 0;
+margin-top: 4px;
 }
 
 /*footer*/
-
 .footer-section {
     background-color: var(--primary-background-color);
     padding: 60px;
+}
+
+.logo-studio-footer {
+    color: var(--primery-white-color);
 }
 
 .footer-adress {
