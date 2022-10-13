@@ -341,11 +341,6 @@ gap: 8px;
     flex-basis: calc(100% / 3 - 30px);
     margin-left: var(--project-cards-set-gap);
     margin-top: var(--project-cards-set-gap);
-
-    flex-grow: 1;
-    flex-shrink: 0;
-    border: none;
-    flex-shrink: 0;
 }
 
 .project-card-content {
