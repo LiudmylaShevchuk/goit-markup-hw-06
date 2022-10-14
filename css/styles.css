@@ -29,7 +29,7 @@ img {
     max-width: 100%;
 }
 
-link {
+.link {
     display: block;
 }
 
@@ -173,7 +173,7 @@ margin-right: 50px;
 .hero-section {
     background: var(--primary-background-color);
 margin: 0 auto;
-padding: 200px 425px;
+padding: 200px 0;
 }
 
 .hero-container {
@@ -194,7 +194,7 @@ padding: 200px 425px;
         text-align: center;
         color: var(--primery-white-color);
         width: 696px;
-        margin: auto;
+        margin: 0 auto;
  }
 
 .main-button {
@@ -243,7 +243,7 @@ margin-top: 10px;
 
 /*Examples of projects*/
 .example-projects {
-    margin-top: 0;
+    padding-top: 0;
 }
 .example-projects-cards-list {
     display: flex;
@@ -294,17 +294,12 @@ color: var(--secondary-text-color);
 
 /*portfolio-filters*/
 
-.projects-galery-section {
-    padding: 94px 215px;
-    background: var(--primery-white-color);
-}
 
 .container-filter-buttons {
     display: flex;
-    min-height: 54px;
 justify-content: center;
 gap: 8px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .filter-button {
@@ -345,6 +340,8 @@ gap: 8px;
     flex-basis: calc(100% / 3 - 30px);
     margin-left: var(--project-cards-set-gap);
     margin-top: var(--project-cards-set-gap);
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .project-card-thumb > .link > img {
@@ -380,15 +377,15 @@ margin-top: 4px;
 /*footer*/
 .footer-section {
     background-color: var(--primary-background-color);
-    padding: 60px;
+    padding: 60px 0;
 }
 
 .logo-studio-footer {
     color: var(--primery-white-color);
 }
 
-.footer-adress {
-    fonts-style: none;
+.footer-adress > ul {
+    font-style: normal;
     margin-top: 20px;
 }
 
