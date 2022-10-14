@@ -347,8 +347,15 @@ gap: 8px;
     margin-top: var(--project-cards-set-gap);
 }
 
+.project-card-thumb > .link > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: none;
+}
+
 .project-card-content {
-    max-width: 322px;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
