@@ -29,12 +29,10 @@
             >
             <ul class="container-nav-menu">
               <li class="nav-item">
-                <a class="link-nav" href="./index.html">Студія</a>
+                <a class="link-nav link-current" href="./index.html">Студія</a>
               </li>
               <li class="nav-item">
-                <a class="link-nav link-current" href="./portfolio.html"
-                  >Портфоліо</a
-                >
+                <a class="link-nav" href="./portfolio.html">Портфоліо</a>
               </li>
               <li class="nav-item">
                 <a class="link-nav" href="#">Контакти</a>
@@ -43,12 +41,30 @@
           </div>
           <ul class="header-contact">
             <li class="header-contact-item">
-              <a class="link-contact" href="mailto:info@devstudio.com"
+              <a href="mailto:info@devstudio.com" class="link-contact link">
+                <svg
+                  class="envelope-icon"
+                  width="16"
+                  heihgt="12"
+                  viewbox="0 0 43 32"
+                >
+                  <use
+                    href="./images/symbol-defs.svg#icon-envelope-hover"
+                  ></use></svg
                 >info@devstudio.com</a
               >
             </li>
             <li class="header-contact-item">
-              <a class="link-contact" href="tel:+380961111111"
+              <a href="tel:+380961111111" class="link-contact link">
+                <svg
+                  class="smartphone-icon"
+                  width="10"
+                  heihgt="16"
+                  viewbox="0 0 20 32"
+                >
+                  <use
+                    href="./images/symbol-defs.svg#icon-smartphone"
+                  ></use></svg
                 >+38 096 111 11 11</a
               >
             </li>
@@ -84,16 +100,16 @@
             <!--project 1-->
             <li class="project-item">
               <div class="project-card-thumb">
-                <a class="link" href="#">
+                <a class="project-link link" href="#">
                   <img
                     src="./images/project_1.jpg"
                     alt="три фотографії трьох співробітників компанії відображені на моніторі ноутбука"
                   />
+                  <div class="project-card-content">
+                    <h2 class="card-title">Технокряк</h2>
+                    <p class="card-description">Веб-сайт</p>
+                  </div>
                 </a>
-              </div>
-              <div class="project-card-content">
-                <h2 class="card-title">Технокряк</h2>
-                <p class="card-description">Веб-сайт</p>
               </div>
             </li>
             <!--project 2-->
@@ -104,11 +120,11 @@
                     src="./images/project_2.jpg"
                     alt="постер із гравцями у баскетбол"
                   />
+                  <div class="project-card-content">
+                    <h2 class="card-title">Постер New Orlean vs Golden Star</h2>
+                    <p class="card-description">Дизайн</p>
+                  </div>
                 </a>
-              </div>
-              <div class="project-card-content">
-                <h2 class="card-title">Постер New Orlean vs Golden Star</h2>
-                <p class="card-description">Дизайн</p>
               </div>
             </li>
             <!--project 3-->
@@ -119,11 +135,11 @@
                     src="./images/project_3.jpg"
                     alt="емблема додатку ресторана Seafood"
                   />
+                  <div class="project-card-content">
+                    <h2 class="card-title">Ресторан Seafood</h2>
+                    <p class="card-description">Додаток</p>
+                  </div>
                 </a>
-              </div>
-              <div class="project-card-content">
-                <h2 class="card-title">Ресторан Seafood</h2>
-                <p class="card-description">Додаток</p>
               </div>
             </li>
             <!--project 4-->
@@ -131,11 +147,11 @@
               <div class="project-card-thumb">
                 <a class="link" href="#">
                   <img src="./images/project_4.jpg" alt="навушники" />
+                  <div class="project-card-content">
+                    <h2 class="card-title">Проєкт Prime</h2>
+                    <p class="card-description">Маркетинг</p>
+                  </div>
                 </a>
-              </div>
-              <div class="project-card-content">
-                <h2 class="card-title">Проєкт Prime</h2>
-                <p class="card-description">Маркетинг</p>
               </div>
             </li>
             <!--project 5-->
@@ -146,11 +162,11 @@
                     src="./images/project_5.jpg"
                     alt="більшакоробка біла іменша коробка світлокоричнева"
                   />
+                  <div class="project-card-content">
+                    <h2 class="card-title">Проєкт Boxes</h2>
+                    <p class="card-description">Додаток</p>
+                  </div>
                 </a>
-              </div>
-              <div class="project-card-content">
-                <h2 class="card-title">Проєкт Boxes</h2>
-                <p class="card-description">Додаток</p>
               </div>
             </li>
             <!--project 6-->
@@ -161,11 +177,11 @@
                     src="./images/project_6.jpg"
                     alt="монітор із зображенням веб-сайту Inspiration has no Borders"
                   />
+                  <div class="project-card-content">
+                    <h2 class="card-title">Inspiration has no Borders</h2>
+                    <p class="card-description">Веб-сайт</p>
+                  </div>
                 </a>
-              </div>
-              <div class="project-card-content">
-                <h2 class="card-title">Inspiration has no Borders</h2>
-                <p class="card-description">Веб-сайт</p>
               </div>
             </li>
             <!--project 7-->
@@ -176,11 +192,11 @@
                     src="./images/project_7.jpg"
                     alt="розворот видання Limited Edition"
                   />
+                  <div class="project-card-content">
+                    <h2 class="card-title">Видання Limited Edition</h2>
+                    <p class="card-description">Дизайн</p>
+                  </div>
                 </a>
-              </div>
-              <div class="project-card-content">
-                <h2 class="card-title">Видання Limited Edition</h2>
-                <p class="card-description">Дизайн</p>
               </div>
             </li>
             <!--project 8-->
@@ -191,11 +207,11 @@
                     src="./images/project_8.jpg"
                     alt="бірка із назвою проекта labeltag"
                   />
+                  <div class="project-card-content">
+                    <h2 class="card-title">Проєкт LAB</h2>
+                    <p class="card-description">Маркетинг</p>
+                  </div>
                 </a>
-              </div>
-              <div class="project-card-content">
-                <h2 class="card-title">Проєкт LAB</h2>
-                <p class="card-description">Маркетинг</p>
               </div>
             </li>
             <!--project 9-->
@@ -206,11 +222,11 @@
                     src="./images/project_9.jpg"
                     alt="чоловік друкує на ноутбуці, на моніторі додаток Growing Business"
                   />
+                  <div class="project-card-content">
+                    <h2 class="card-title">Growing Business</h2>
+                    <p class="card-description">Додаток</p>
+                  </div>
                 </a>
-              </div>
-              <div class="project-card-content">
-                <h2 class="card-title">Growing Business</h2>
-                <p class="card-description">Додаток</p>
               </div>
             </li>
           </ul>
@@ -218,34 +234,73 @@
       </section>
       <footer class="footer-section">
         <div class="container">
-          <a class="logo" href="./index.html"
-            ><span class="logo-web">Web</span
-            ><span class="logo-studio-footer">Studio</span></a
-          >
-          <adress class="footer-adress">
-            <ul>
-              <li class="footer-item">
-                <a
-                  class="link-footer-adress"
-                  href="htpps:goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="footer-item">
-                <a class="link-footer-contacts" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="footer-item">
-                <a class="link-footer-contacts" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </adress>
+          <div class="footer-containers">
+            <div class="footer-logo-adress">
+              <a class="logo" href="./index.html"
+                ><span class="logo-web">Web</span
+                ><span class="logo-studio-footer">Studio</span></a
+              >
+              <adress class="footer-adress">
+                <ul>
+                  <li class="footer-item">
+                    <a
+                      class="link-footer-adress"
+                      href="htpps:goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                    >
+                      м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a
+                      class="link-footer-contacts"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="link-footer-contacts" href="tel:+380961111111"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </adress>
+            </div>
+            <div class="footer-soc-links">
+              <p class="join-us">приєднуйтесь</p>
+              <ul class="footer-soc-list">
+                <li class="footer-soc-item">
+                  <a href="" class="soc-link">
+                    <svg class="soc-icon" width="20" heihgt="20">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soc-item">
+                  <a href="" class="soc-link">
+                    <svg class="soc-icon" width="20" heihgt="20">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soc-item">
+                  <a href="" class="soc-link">
+                    <svg class="soc-icon" width="20" heihgt="20">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soc-item">
+                  <a href="" class="soc-link">
+                    <svg class="soc-icon" width="20" heihgt="20">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </footer>
     </main>
