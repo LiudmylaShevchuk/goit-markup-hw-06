@@ -167,6 +167,7 @@ border-bottom: 1px solid #ECECEC;
 /*hero*/
 
 .hero-section {
+    max-width: 1600px;
 margin: 0 auto;
 padding: 200px 0;
     background-color: #C4C4C4;
