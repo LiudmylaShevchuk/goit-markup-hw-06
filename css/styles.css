@@ -6,6 +6,7 @@
     --primary-background-color: #2f303a;
     --secondary-background-color: #F5F4FA;
     --project-cards-set-gap: 30px;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -118,6 +119,8 @@ border-bottom: 1px solid #ECECEC;
     letter-spacing: 0.02em;
     display: block;
     padding: 30px 0;
+    transition: color 250ms;
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .link-nav:hover,
@@ -131,12 +134,12 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .link-nav.link-current::after {
-    width: 48px;
+    width: 100%;
     height: 4px;
     position: absolute;
     bottom: 0;
     left:0;
-    background: #2196F3;
+    background-color: currentColor;
     border-radius: 2px;
     content: ''
 }
@@ -160,6 +163,8 @@ border-bottom: 1px solid #ECECEC;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    transition: color 250ms;
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .link-contact:hover,
@@ -172,6 +177,8 @@ border-bottom: 1px solid #ECECEC;
 .smartphone-icon {
     margin-right: 10px;
     fill: currentColor;
+    transition: color 250ms, fill 250ms;
+    transition-timing-function: var(--transition-timing-function);
 }
 
 
@@ -368,11 +375,15 @@ gap: 10px;
 .soc-link:hover, 
 .soc-link:focus {
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: var(--primery-white-color);
+    transition: color 250ms, background-color 250ms;
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .soc-icon {
     fill: currentColor;
+    transition: color 250ms, background-color 250ms, fill 250ms;
+    transition-timing-function: var(--transition-timing-function);
 }
 
 
@@ -395,12 +406,14 @@ display: flex;
 border: 1px solid #AFB1B8;
 color: #AFB1B8;
 border-radius: 4px;
-    justify-content: center;
-    align-items: center;
+justify-content: center;
+align-items: center;
+transition: color 250ms, border-color 250ms;
+transition-timing-function: var(--transition-timing-function);
 }
 
 .logo-icon {
-    fill: currentColor;
+fill: currentColor;
 }
 
 .clients-link:hover,
@@ -419,6 +432,8 @@ border-radius: 4px;
     height: 100%;
     z-index: 1;
         background-color: rgba(0, 0, 0, 0.2);
+        transition: opacity 250ms, visibility 250ms;
+        transform: translate(0, -550px);
 }
 
 .is-hidden {
@@ -438,6 +453,11 @@ width: 528px;
 }
 
 .modal-close-button {
+    width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -470,6 +490,8 @@ gap: 8px;
     border-radius: 4px;
     padding: 6px 22px;
     cursor: pointer;
+    transition: color 250ms, background 250ms;
+    transition-timing-function: var(--transition-timing-function);
     }
     
 .filter-button:hover,
@@ -477,7 +499,9 @@ gap: 8px;
         color: var(--primery-white-color);
         background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
+    transition: color 250ms, background 250ms, box-shadow 250ms;
+        transition-timing-function: var(--transition-timing-function);
+}
 
     
 /*portfolio-cards*/
@@ -495,15 +519,46 @@ gap: 8px;
     margin-top: var(--project-cards-set-gap);
 }
 
-.project-link {
-    display: block;
-    height: 100%;
-    width: 100%;
+.project-item:hover,
+.project-item:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms;
+        transition-timing-function: var(--transition-timing-function);
 }
 
-.project-link:hover,
-.project-link:focus {
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-card-thumb {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+}
+
+.project-item .project-link:hover .project-card-overlay {
+    transform: translateY(0);
+    transition: transform 250ms;
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.project-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms;
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.overlay-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--primery-white-color);
 }
 
 .project-card-content {
@@ -556,10 +611,15 @@ text-decoration: none;
     font-size: 14px;
     line-height: 1.7;    
     color: var(--primery-white-color);
+    transition: color 250ms;
+    transition-timing-function: var(--transition-timing-function);
     }
+
 .link-footer-adress:hover, 
 .link-footer-adress:focus {
     color:var(--accent-color);
+    transition: color 250ms;
+    transition-timing-function: var(--transition-timing-function);
     }
 
 .link-footer-contacts {
@@ -567,10 +627,15 @@ text-decoration: none;
 font-size: 14px;
 line-height: 1.7;
 color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms;
+    transition-timing-function: var(--transition-timing-function);
     }
+
 .link-footer-contacts:hover,
 .link-footer-contacts:focus {
         color:var(--accent-color);
+            transition: color 250ms;
+            transition-timing-function: var(--transition-timing-function);
     }
 
 .footer-soc-links {
@@ -602,12 +667,16 @@ color: rgba(255, 255, 255, 0.6);
             border-radius: 50%;
             color: #ffffff;
             background: rgba(255, 255, 255, 0.1);
-}
+    transition: color 250ms, background 250ms;
+    transition-timing-function: var(--transition-timing-function);
+        }
 
 .footer-soc-item:hover,
 .footer-soc-item:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
+    transition: background-color 250ms;
+    transition-timing-function: var(--transition-timing-function);
 }
 
 
