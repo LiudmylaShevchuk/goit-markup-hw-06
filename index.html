@@ -62,7 +62,7 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
-          <button class="main-button" type="button">Замовити послугу</button>
+          <button class="main-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!--Переваги-->
@@ -126,7 +126,7 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="example-projects-cards-list">
-            <li>
+            <li class="example-projects-card">
               <img
                 class="example-img"
                 src="./images/tablet_and_keyboard.jpg"
@@ -134,7 +134,7 @@
                 width="370"
               />
             </li>
-            <li>
+            <li class="example-projects-card">
               <img
                 class="example-img"
                 src="./images/laptop_and_smartphon.jpg"
@@ -142,7 +142,7 @@
                 width="370"
               />
             </li>
-            <li>
+            <li class="example-projects-card">
               <img
                 class="example-img"
                 src="./images/graphic_tablet.jpg"
@@ -448,5 +448,19 @@
             </div>
         </div>
       </footer>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <h2></h2>
+          <p></p>
+          <button class="modal-close-button" type="button" data-modal-close>
+            <svg class="close-icon" width="30" height="30">
+            <use href="./images/icons.svg#icon-close-icon"></use>
+            </svg>
+          </button>
+      </div>
+      </div>
+
+      <script src="./js/modal.js"></script>
   </body>
 </html>
