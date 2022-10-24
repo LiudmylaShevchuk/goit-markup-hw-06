@@ -477,12 +477,12 @@ gap: 8px;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--primery-text-color);
-    background: var(--secondary-background-color);
+    background-color: var(--secondary-background-color);
     border: none;
     border-radius: 4px;
     padding: 6px 22px;
     cursor: pointer;
-    transition: color 250ms, background 250ms, var(--transition-timing-function);
+    transition: color 250ms, background-color 250ms, var(--transition-timing-function);
     }
     
 .filter-button:hover,
@@ -584,6 +584,10 @@ margin-top: 4px;
     display: flex;
 }
 
+.footer-logo-adress {
+align-items: baseline;
+}
+
 .logo-studio-footer {
     color: var(--primery-white-color);
 }
@@ -626,6 +630,7 @@ color: rgba(255, 255, 255, 0.6);
 
 .footer-soc-links {
     margin-left: 70px;
+    align-items: baseline;
 }
 
 .join-us {
