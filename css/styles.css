@@ -521,6 +521,11 @@ border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
     margin-bottom: 20px;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
 }
 
 /*hidden input-checkbox*/
@@ -533,11 +538,10 @@ position: relative;
 }
 
 .label-checkbox {
-position: relative;
 width: 400px;
 font-weight: 400;
     font-size: 14px;
-    line-height: 1,7;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 padding-left: 24px;
@@ -566,7 +570,7 @@ position: absolute;
     left: 0;
     width: 16px;
     height: 15px;
-    border: 1px solid #212121;
+    border: none;
     border-radius: 2px;
     background: var(--accent-color);
     opacity: 0;
@@ -574,10 +578,12 @@ position: absolute;
 }
 
 .icon-check {
-        left: 3px;
-        top: 50%;
+    position: absolute;
+    top: 30%;
+    left: 2px;
         transform: translateY(-50%);
-        fill: #212121;
+        fill: var(--primery-white-color);
+        z-index: 1;
     }
 
 
@@ -813,6 +819,53 @@ color: rgba(255, 255, 255, 0.6);
 .footer-sign-up {
     margin-left: 93px;
 }
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.footer-input {
+    display: flex;
+width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--primary-background-color)
+font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    }
+
+ .footer-button {
+    width: 200px;
+        height: 50px;
+        background-color: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-weight: 700;
+            font-size: 16px;
+            line-height: 1.87;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
+            color: var(--primery-white-color);
+padding-left: 28px;
+    transition: background-color 250ms var(--transition-timing-function);
+        }
+
+.sign-up-icon {
+    fill: var(--primery-white-color);
+    margin-left: 10px;
+}
+
 
 
     
